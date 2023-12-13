@@ -1,0 +1,67 @@
+  <title>Lista de Productos</title>
+
+  <div class="containerFiltro">
+  <div>
+  <form action="/home" method="get">
+  <div >
+    <label for="query">Por:</label>
+  <select  name="field" id="query">
+    <option value="title">Título</option>
+    <option value="description">Descripción</option>
+    <option value="price">Precio</option>
+    <option value="category">Categoría</option>
+    <option value="stock">Stock</option>
+    <option value="code">Codigo</option>
+  </select>
+  </div>
+  <div>
+  <input  type="text" name="value" placeholder="Valor" />
+  <button class="btn btn-outline-secondary" type="submit">Filtrar</button>  
+  </div>
+</form>
+  </div>
+
+<div class="alingFiltro">
+    <h6>Filtrar</h6>
+    <a  href="/home?sort=asc">De Menor a Mayor</a>
+    <a href="/home?sort=desc">De Mayor a Menor</a>
+  </div>
+  
+
+  </div>
+
+  
+
+
+  <h1>Lista de Productos</h1>
+  <table class="containerTable">
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Precio</th>
+      <th>Categoría</th>
+      <th>Thumbnail</th>
+      <th>Código</th>
+      <th>Stock</th>
+      <th>Eliminar</th>
+    </tr>
+    {{#each products}}
+    <tr>
+    <td>{{this._id}}</td>
+    <td>{{this.title}}</td>
+       <td>{{this.price}}</td>
+    <td>{{this.category}}</td>
+    <td><img src="{{this.thumbnail}}" alt="Thumbnail" width="50"></td>
+    <td>{{this.code}}</td>
+    <td>{{this.stock}}</td>
+    <td><a href="/delete/{{this._id}}">🗑</a></td>
+    </tr>
+    {{/each}}
+  </table>
+
+  <div class="containerPag">
+    {{#if hasNextPage}}
+    <a href="{{prevLink}}">Anteriror</a>
+    <a href="{{nextLink}}">Siguiente</a>
+  {{/if}}
+  </div>

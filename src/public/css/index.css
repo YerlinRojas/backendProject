@@ -1,0 +1,166 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafaf7;
+  }
+
+  
+  .text-b{
+    color: black;
+  }
+  h1 {
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td a {
+    color: #ff0000;
+    text-decoration: none;
+  }
+  td a:hover {
+    text-decoration: underline;
+  }
+
+.chat-box {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: rgb(154, 225, 241);
+  border-radius: 5px;
+}
+.message {
+  margin-bottom: 10px;
+  padding: 5px;
+  
+}
+
+.formChat {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+h5 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.containerform{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 25px;
+}
+
+.containerFiltro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:start;
+  margin-top: 5%;
+}
+
+.alingFiltro{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: left;
+
+}
+
+.containerPag{
+  margin-left: 50%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.row{
+  margin: 15px;
+}
+
+.card{
+  margin: 15px;
+  
+}
+
+.containerTable{
+  background-color: white;
+}
+
+.divCenter{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  gap: 15px;
+}
+
+.divForm{
+padding: 5% 25% 5% 25%;
+}
+
+.formatForm{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto ;
+}
+
+.divRow{
+  display: flex;
+  flex-direction: row;
+}
+
+.divColumn{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.aling{
+  align-items: end;
+}
+
+.marginBt{
+  margin-bottom: 2%;
+}
+.justify{
+  justify-content: end;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+}
+

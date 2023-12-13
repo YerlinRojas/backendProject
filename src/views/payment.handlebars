@@ -1,0 +1,15 @@
+
+<div class="d-flex flex-column align-items-center border ">
+<div>
+    <h4>Total a pagar: {{amount}} Ars</h4>
+</div>
+<div>
+ 
+   <form action="/api/payment/payment-intens" method="post">
+        <input type="hidden" name="amount" value="{{amount}}">
+        <button class="btn btn-warning" type="submit">Ir a Pagar</button>
+    </form>
+  </div>  
+    </div>
+
+
